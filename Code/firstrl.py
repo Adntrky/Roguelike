@@ -3,7 +3,7 @@ import libtcodpy as libtcod
 SCREEN_WIDTH = 80
 SCREEN_HEIGHT = 50
  
-LIMIT_FPS = 20 
+LIMIT_FPS = 30 
  
  
 def handle_keys():
@@ -38,7 +38,7 @@ playery = SCREEN_HEIGHT/2
  
 while not libtcod.console_is_window_closed():
  
-    libtcod.console_set_default_foreground(0, libtcod.white)
+    libtcod.console_set_default_foreground(0, libtcod.green)
     libtcod.console_put_char(0, playerx, playery, '@', libtcod.BKGND_NONE)
  
     libtcod.console_flush()
