@@ -24,8 +24,6 @@ class Object:
         libtcod.console_put_char(con, self.x, self.y, ' ', libtcod.BKGND_NONE)
  
 def handle_keys():
-    global playerx, playery
- 
     key = libtcod.console_check_for_keypress()  
  
     if key.vk == libtcod.KEY_ENTER and key.lalt:
